@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>
+		My Fisrt Web Page
+	</title>
+	<link rel="stylesheet" type="text/css" href="css\default.css">
+</head>
+<body>
+	<header id="main-header">
+		<h1>My Website</h1>
+		<small>Created by Marno Coetzee</small>
+	</header>
+	<nav id="navbar">
+			<a href="#">Home</a>
+			<a href="#Services">Services</a>
+			<a href="#">About</a>
+			<div class="dropdown">
+			<button class="dropbtn">Contact</button>
+				<div class="dropdown-content" id="contactmn">
+				    <a href="#">Ln</a>
+				    <a href="#">FB</a>
+				    <a href="#">Ph</a>
+				  </div>
+				</div>
+
+	</nav>
+	<div class="content">
+	<div class="container-1">
+			<div id="sc-logo">
+			<img src="img/logo.png"></div>
+			<div id="sc-description">
+			<p> Showcasing my skills as web developer. This page will grow as I learn more and will be applying those new skills here.</p>
+			</div>
+	</div> 	
+
+	<div class="clr"></div>
+
+	<section id="main">
+	<div class="box-1">
+	<h1>Portfolio</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="box-1">
+		<h1 id="Services">Services</h1>
+		<p>Currently a basic Web design is our only offer. We will be expanding our skills and offerings in the near future.</p>
+	</div>
+	</section>
+</div> <!-- .content -->
+	<div style="margin-top:300px;"></div>
+</body>
+</html>
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+var contactdrp = document.getElementById("contactmn");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+    contactdrp.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+    contactdrp.classList.remove("sticky");
+  }
+}
+</script>

@@ -1,0 +1,129 @@
+
+body{
+	background-color: #f4f4f4;
+	color: #333;
+	font: normal 16px Arial, Helvetica, sans-serif;
+	line-height: 1.6em;
+	margin: 0;
+}
+
+/* Page content */
+.content {
+  padding: 0;
+}
+
+.clr{
+	clear:both;}
+
+.box-1{
+	width: 80%;
+	margin: auto;
+	margin-top: 1em;
+	border: 3px #035 solid;
+	border-radius: 10px;
+	padding: 20px;
+	overflow: hidden;
+}
+
+#main-header{
+	background-color: #044;
+	color: #fff;
+	margin: 0;
+	padding: 15px;
+}
+
+#main-header h1{
+	margin-bottom: 0;
+}
+#main-header small{
+	font-size: 10px;
+	margin-left: 50px;
+}
+
+#navbar{
+	overflow: hidden;
+	background-color: #333;
+	padding:0;
+}
+
+#navbar a {
+	float: left;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	text-align: center;
+	padding: 14px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 18px 14px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+#navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #055;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.container-1{
+	display:flex;
+}
+#sc-logo{
+	flex-basis:120px;
+	box-sizing: border-box;
+}
+#sc-description{
+	flex:1;
+	padding: 0 1em;
+	font-style: italic;
+	box-sizing: border-box;
+}
+
+
