@@ -1,6 +1,5 @@
 
 <!DOCTYPE html>
-
 <html>
 <head>
 	<title>
@@ -8,6 +7,7 @@
 	</title>
 	<link rel="stylesheet" type="text/css" href="css\default.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
 	<header id="main-header">
@@ -23,11 +23,14 @@
 				<div class="dropdown-content" id="contactmn">
 				    <a href="https://www.linkedin.com/in/marnoc/" target="_blank"><img src="img/linkedin.png" alt="Linkedin" title="See Linkedin Profile"></a>
 				    <a href="https://github.com/bucket777" target="_blank"><img src="img/github.png" alt="Github" title="See Github Profile"></a>
-		<SCRIPT TYPE="text/javascript">
-		  emailE = 'gmail.com'
-		  emailE = ('marnoc' + '@' + emailE)
-		  document.write('<A href="mailto:' + emailE + '">' + '<img src="img/email.png" alt="Email" title="Send Email">' + '</a>')
-		</script>
+					<SCRIPT TYPE="text/javascript">
+					  emailE = 'gmail.com'
+					  emailE = ('marnoc' + '@' + emailE)
+					  document.write('<A href="mailto:' + emailE + '">' + '<img src="img/email.png" alt="Email" title="Send Email">' + '</a>')
+					</script>
+					<script src="scripts\scripts.js"></script>
+					<a href="#"><img src="img/copy.png" alt="Email" title="Copy Email" onclick="copyToClipboard()"></a>
+
 				  </div>
 				</div>
 	</nav>
@@ -59,11 +62,12 @@
 		<p>Defenitly know my way around the inside of a PC, having put together a few of my own.</p>
 	</div>
 	</section>
+	<div id="snackbar">Copied to Clipboard</div>
 </div> <!-- .content -->
 	<div style="margin-top:300px;"></div>
 </body>
 </html>
-<script>
+<script type="text/javascript">
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
 
