@@ -46,7 +46,7 @@ body{
 	padding:0;
 }
 
-#navbar a {
+#navbar > a {
 	float: left;
 	text-decoration: none;
 	color: #fff;
@@ -84,11 +84,12 @@ body{
 }
 
 .dropdown-content a {
-  float: none;
+  float: left;
   color: black;
   text-decoration: none;
   display: block;
   text-align: left;
+  padding: 0 5px;
 }
 
 .dropdown-content a:hover {
@@ -103,6 +104,12 @@ body{
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.stickyDrop {
+  position: fixed;
+  top: 54px;
+  z-index: 1;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
