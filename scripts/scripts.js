@@ -6,7 +6,7 @@ function doSnackbar() {
   x.className = "show";
 
   // After 3 seconds, remove the show class from DIV
-  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 1000);
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 2000);
 }
 
 function copyToClipboard() {
